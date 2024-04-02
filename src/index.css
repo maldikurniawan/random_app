@@ -21,3 +21,7 @@
 .neno_button:hover {
     box-shadow: 0 0 15px rgb(206, 71, 193);
 }
+
+.b_glow {
+    box-shadow: 0 0 15px rgb(206, 71, 193);
+}

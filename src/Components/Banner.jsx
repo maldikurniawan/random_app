@@ -1,19 +1,15 @@
 import React, { useEffect } from 'react'
-import {AiFillGithub} from 'react-icons/ai'
+import { AiFillGithub } from 'react-icons/ai'
 import { FaLinkedinIn, FaInstagram } from 'react-icons/fa'
-import {FiTwitter} from 'react-icons/fi'
+import { FiTwitter } from 'react-icons/fi'
 import img from '../assets/profile.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 const Banner = () => {
     useEffect(() => {
-        AOS.init({
-            easing: 'ease-in-out',
-            delay: 0,
-            duration: 750
-        })
-    },[])
+        AOS.init({ duration: 1000 });
+    }, [])
     return (
         <div className='lg:px-56 px-10 lg:py-0 py-20 text-center gap-5 lg:text-start flex lg:flex-row flex-col-reverse justify-between lg:gap-28 items-center'>
             <div className='h-full lg:py-40 flex flex-col justify-center lg:items-start items-center text-white'>
@@ -23,16 +19,16 @@ const Banner = () => {
                     <div className='flex items-center justify-center'>
                         <div className='flex space-x-2'>
                             <a href="" className='text-fuchsia-600 hover:text-fuchsia-500 rounded-full glow p-2'>
-                                <AiFillGithub className="text-[29px]"/>
+                                <AiFillGithub className="text-[29px]" />
                             </a>
                             <a href="" className='text-fuchsia-600 hover:text-fuchsia-500 rounded-full glow p-2'>
-                                <FaLinkedinIn className="text-[29px]"/>
+                                <FaLinkedinIn className="text-[29px]" />
                             </a>
                             <a href="" className='text-fuchsia-600 hover:text-fuchsia-500 rounded-full glow p-2'>
-                                <FiTwitter className="text-[29px]"/>
+                                <FiTwitter className="text-[29px]" />
                             </a>
                             <a href="" className='text-fuchsia-600 hover:text-fuchsia-500 rounded-full glow p-2'>
-                                <FaInstagram className="text-[29px]"/>
+                                <FaInstagram className="text-[29px]" />
                             </a>
                         </div>
                     </div>
