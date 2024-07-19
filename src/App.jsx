@@ -1,12 +1,11 @@
 import { useEffect, useState } from 'react'
 import Nav from './Components/Nav'
-import Banner from './Components/Banner'
 import About from './Components/About'
-import Services from './Components/Services'
+import Skills from './Components/Skills'
 import Projects from './Components/Projects'
-import Contact from './Components/Contact'
 import Footer from './Components/Footer'
 import { BallTriangle } from 'react-loader-spinner'
+import Educations from './Components/Educations'
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -35,11 +34,10 @@ function App() {
           :
           <div className="bg-slate-900">
             <Nav />
-            <Banner />
             <About />
-            <Services />
+            <Educations />
+            <Skills />
             <Projects />
-            <Contact />
             <Footer />
           </div>
       }

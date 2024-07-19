@@ -3,25 +3,25 @@ import { FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 
 const Footer = () => {
   return (
-    <footer className='bg-slate-800 text-white lg:px-48 px-4 py-20'>
-      <div className='container mx-auto grid grid-cols-1 md:grid-cols-4 gap-4'>
+    <footer className='bg-slate-800 text-white lg:px-48 px-4 py-12'>
+      {/* <div className='container mx-auto grid grid-cols-1 md:grid-cols-4 gap-4'>
         <div className='mb-4 md:mb-0'>
-          <h2 className='text-[22px] font-semibold text-fuchsia-800 py-2 uppercase'>Logo</h2>
-          <p className='text-[16px] my-4'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia ducimus, laboriosam repellat iusto maiores, tempora perspiciatis nisi laudantium est voluptas itaque eligendi molestias asperiores. Adipisci autem maxime in laborum neque?</p>
+          <h2 className='text-[22px] font-semibold text-fuchsia-800 py-2 uppercase'>Portofolio</h2>
+          <p className='text-[16px] my-4'>Created by Aldi</p>
         </div>
         <div>
-          <h2 className='text-[22px] font-semibold text-fuchsia-800 py-2 uppercase'>Services</h2>
+          <h2 className='text-[22px] font-semibold text-fuchsia-800 py-2 uppercase'>Skills</h2>
           <ul className='text-[16px] my-4'>
-            <li className='my-2'>Web Design</li>
-            <li className='my-2'>Web Development</li>
-            <li className='my-2'>Web Hosting</li>
-            <li className='my-2'>E-Commerce</li>
+            <li className='my-2'>Laravel</li>
+            <li className='my-2'>Django</li>
+            <li className='my-2'>NextJS</li>
+            <li className='my-2'>ReactJS</li>
           </ul>
         </div>
         <div className='mb-4 md:mb-0'>
           <h2 className='text-[22px] font-semibold text-fuchsia-800 py-2 uppercase'>Contact</h2>
-          <p className='text-[16px] my-4'>Email: youremail@gmail.com</p>
-          <p className='text-[16px] my-4'>Phone: +62 813-445-1122</p>
+          <p className='text-[16px] my-4 text-nowrap'>Email: akurniawan2102@gmail.com</p>
+          <p className='text-[16px] my-4'>Phone: +62 8956-1010-7247</p>
         </div>
         <div>
           <h2 className='text-[22px] font-semibold text-fuchsia-800 py-2 uppercase'>Follow Me</h2>
@@ -40,7 +40,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
     </footer>
   )
 }
