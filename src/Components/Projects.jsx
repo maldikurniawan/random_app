@@ -1,8 +1,4 @@
 import React from 'react'
-import img1 from '../assets/p1.png'
-import img2 from '../assets/p2.jpg'
-import img3 from '../assets/p3.jpg'
-import img4 from '../assets/p4.jpg'
 
 const Projects = () => {
   return (
@@ -11,31 +7,55 @@ const Projects = () => {
         Projects
       </h1>
       <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-around gap-10 mb-20'>
-        <img
-          data-aos="fade-up"
-          height={250}
-          width={250}
-          className='text-[26px] flex items-center justify-center rounded-3xl p-1 border-2 border-fuchsia-800 b_glow' src={img1}
-          alt=""
-        />
-        <img
-          data-aos="fade-down"
-          height={250}
-          width={250}
-          className='text-[26px] flex items-center justify-center rounded-3xl p-1 border-2 border-fuchsia-800 b_glow' src={img2}
-          alt="" />
-        <img
-          data-aos="fade-up"
-          height={250}
-          width={250}
-          className='text-[26px] flex items-center justify-center rounded-3xl p-1 border-2 border-fuchsia-800 b_glow' src={img3}
-          alt="" />
-        <img
-          data-aos="fade-down"
-          height={250}
-          width={250}
-          className='text-[26px] flex items-center justify-center rounded-3xl p-1 border-2 border-fuchsia-800 b_glow' src={img4}
-          alt="" />
+        <div className="relative group">
+          <img
+            data-aos="fade-up"
+            height={250}
+            width={250}
+            className="text-[26px] flex items-center justify-center rounded-3xl p-1 border-2 border-fuchsia-800 b_glow"
+            src="./assets/erpskrip.jpg"
+            alt=""
+          />
+          <div className="absolute inset-0 flex items-center justify-center rounded-3xl text-center bg-black bg-opacity-80 font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            ERPSKRIP
+          </div>
+        </div>
+        <div className='relative group'>
+          <img
+            data-aos="fade-down"
+            height={250}
+            width={250}
+            className='text-[26px] flex items-center justify-center rounded-3xl p-1 border-2 border-fuchsia-800 b_glow'
+            src="./assets/sipelan.jpg"
+            alt="" />
+          <div className="absolute inset-0 flex items-center justify-center rounded-3xl text-center bg-black bg-opacity-80 font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            Sistem Pengelola Aktivitas Perkuliahan
+          </div>
+        </div>
+        <div className='relative group'>
+          <img
+            data-aos="fade-down"
+            height={250}
+            width={250}
+            className='text-[26px] flex items-center justify-center rounded-3xl p-1 border-2 border-fuchsia-800 b_glow'
+            src="./assets/bukuilmiah.jpg"
+            alt="" />
+          <div className="absolute inset-0 flex items-center justify-center rounded-3xl text-center bg-black bg-opacity-80 font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            Buku Ilmiah
+          </div>
+        </div>
+        <div className='relative group'>
+          <img
+            data-aos="fade-down"
+            height={250}
+            width={250}
+            className='text-[26px] flex items-center justify-center rounded-3xl p-1 border-2 border-fuchsia-800 b_glow'
+            src="./assets/cache.jpg"
+            alt="" />
+          <div className="absolute inset-0 flex items-center justify-center rounded-3xl text-center bg-black bg-opacity-80 font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            Sistem Monitoring<br />Cache Server
+          </div>
+        </div>
       </div>
     </div>
   )

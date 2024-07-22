@@ -8,7 +8,12 @@ const Educations = () => {
             </h1>
             <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-around gap-20'>
                 <h2 data-aos="fade-down">
-                    <div className='text-[26px] text-center font-semibold text-white text-nowrap'>
+                    <div className='min-[500px]:text-[26px] text-xl justify-center text-center font-semibold text-white text-nowrap flex items-center gap-2'>
+                        <img
+                            src="./assets/logo-unila.png"
+                            alt="logo"
+                            className="h-8 w-8"
+                        />
                         Universitas Lampung
                     </div>
                     <div className='text-center text-[#e1e1e1]'>
@@ -22,7 +27,12 @@ const Educations = () => {
                     </div>
                 </h2>
                 <h2 data-aos="fade-up">
-                    <div className='text-[26px] text-center font-semibold text-white text-nowrap'>
+                    <div className='min-[500px]:text-[26px] text-xl justify-center text-center font-semibold text-white text-nowrap flex items-center gap-2'>
+                        <img
+                            src="./assets/logo-kominfo.png"
+                            alt="logo"
+                            className="h-8 w-8"
+                        />
                         Kominfo Lampung
                     </div>
                     <div className='text-center text-[#e1e1e1]'>
@@ -32,11 +42,16 @@ const Educations = () => {
                         Jul 2023 - Sep 2023
                     </div>
                     <div className='text-center text-[#d0d0d0]'>
-                        Grade: 96 / 100
+                        Grade: 92 / 100
                     </div>
                 </h2>
                 <h2 data-aos="fade-down">
-                    <div className='text-[26px] text-center font-semibold text-white text-nowrap'>
+                    <div className='min-[500px]:text-[26px] text-xl justify-center text-center font-semibold text-white text-nowrap flex items-center gap-2'>
+                        <img
+                            src="./assets/logo-nf.png"
+                            alt="logo"
+                            className="h-8 w-8"
+                        />
                         NF Academy
                     </div>
                     <div className='text-center text-[#e1e1e1]'>
@@ -50,7 +65,12 @@ const Educations = () => {
                     </div>
                 </h2>
                 <h2 data-aos="fade-up">
-                    <div className='text-[26px] text-center font-semibold text-white text-nowrap'>
+                    <div className='min-[500px]:text-[26px] text-xl justify-center text-center font-semibold text-white text-nowrap flex items-center gap-2'>
+                        <img
+                            src="./assets/logo-smalan.png"
+                            alt="logo"
+                            className="h-8 w-8"
+                        />
                         SMAN 9 B. Lampung
                     </div>
                     <div className='text-center text-[#e1e1e1]'>
@@ -60,7 +80,7 @@ const Educations = () => {
                         Aug 2017 - Apr 2020
                     </div>
                     <div className='text-center text-[#d0d0d0]'>
-                        Grade: 82 / 100
+                        Grade: 86 / 100
                     </div>
                 </h2>
             </div>

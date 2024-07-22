@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import img from '../assets/profile.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -12,7 +11,7 @@ const About = () => {
     <div id='About' className='lg:px-56 px-10 lg:py-0 py-20 text-center gap-5 lg:text-start flex lg:flex-row flex-col justify-between lg:gap-28 items-center'>
       <img
         data-aos="fade-down"
-        src={img}
+        src="./assets/picture.jpeg"
         width={200}
         height={200}
         className='rounded border-2 p-1 mt-6 border-fuchsia-500 img_glow'
@@ -23,7 +22,7 @@ const About = () => {
           About Me
         </h1>
         <p data-aos="fade-left">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores dolorum, sed perspiciatis error rerum quisquam quasi voluptate esse facilis numquam obcaecati? Voluptatibus consequatur praesentium enim, molestiae mollitia quae cupiditate!
+          Welcome to my portfolio! I am a dedicated and passionate Front-End Web Developer with a keen eye for design and a strong foundation in web technologies. Explore my work to see how I bring ideas to life through code.
         </p>
         <div className='flex mt-8 gap-2'>
           <div className='flex items-center justify-center'>
@@ -31,9 +30,9 @@ const About = () => {
               <button className='neno-button shadow-xl hover:shadow-fuchsia-800/50 text-white border-2 hover:bg-fuchsia-800 border-fuchsia-800 rounded-lg py-4 px-8 uppercase relative overflow-hidden'>
                 Resume
               </button>
-              <button className='neno-button shadow-xl hover:shadow-fuchsia-800/50 text-white border-2 hover:bg-fuchsia-800 border-fuchsia-800 rounded-lg py-4 px-11 uppercase relative overflow-hidden'>
+              <a href='mailto:akurniawan2102@gmail.com' className='neno-button shadow-xl hover:shadow-fuchsia-800/50 text-white border-2 hover:bg-fuchsia-800 border-fuchsia-800 rounded-lg py-4 px-11 uppercase relative overflow-hidden'>
                 Hire
-              </button>
+              </a>
             </div>
           </div>
         </div>
