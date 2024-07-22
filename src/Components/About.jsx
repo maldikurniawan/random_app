@@ -18,7 +18,7 @@ const About = () => {
         alt=""
       />
       <div className='h-full lg:py-40 flex flex-col justify-center lg:items-start items-center text-white'>
-        <h1 data-aos="fade-right" className='text-[52px] font-semibold mb-8 leading-normal text-fuchsia-500 uppercase'>
+        <h1 data-aos="fade-right" className='text-5xl font-semibold mb-8 leading-normal text-fuchsia-500 uppercase text-nowrap'>
           About Me
         </h1>
         <p data-aos="fade-left">

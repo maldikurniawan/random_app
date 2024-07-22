@@ -3,7 +3,7 @@ import React from 'react'
 const Projects = () => {
   return (
     <div id='Projects' className='p-20 flex flex-col items-center justify-center'>
-      <h1 data-aos="fade-right" className='text-[52px] font-semibold mb-20 leading-normal uppercase text-fuchsia-500'>
+      <h1 data-aos="fade-right" className='text-5xl font-semibold mb-20 leading-normal uppercase text-fuchsia-500'>
         Projects
       </h1>
       <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-around gap-10 mb-20'>
