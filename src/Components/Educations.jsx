@@ -52,13 +52,13 @@ const Educations = () => {
                             alt="logo"
                             className="h-8 w-8"
                         />
-                        NF Academy
+                        NF Computer
                     </div>
                     <div className='text-center text-[#e1e1e1]'>
                         Fullstack Web Dev
                     </div>
                     <div className='text-center text-[#d0d0d0]'>
-                        Feb 2023 - Jul 2023
+                        Feb 2023 - Jun 2023
                     </div>
                     <div className='text-center text-[#d0d0d0]'>
                         Grade: 92 / 100
