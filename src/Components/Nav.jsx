@@ -8,21 +8,7 @@ const Nav = () => {
   const handleClick = () => {
     setClick(!click);
   }
-  const content = <>
-    <div className='md:hidden block absolute top-16 w-full left-0 right-0 bg-slate-900 transition'>
-      <ul className='text-center text-xl p-20'>
-        <Link spy={true} smooth={true} to="About">
-          <li className='my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded'>About</li>
-        </Link>
-        <Link spy={true} smooth={true} to="Skills">
-          <li className='my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded'>Skills</li>
-        </Link>
-        <Link spy={true} smooth={true} to="Projects">
-          <li className='my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded'>Projects</li>
-        </Link>
-      </ul>
-    </div>
-  </>
+
   return (
     <nav>
       <div className='h-10vh flex justify-between w-full z-50 text-white lg:py-5 px-5 md:px-16 py-4 fixed bg-slate-900'>
@@ -41,18 +27,33 @@ const Nav = () => {
               <Link spy={true} smooth={true} to="Projects">
                 <li className='hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer'>Projects</li>
               </Link>
+              <Link spy={true} smooth={true} to="Minigames">
+                <li className='hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer'>Minigames</li>
+              </Link>
             </ul>
           </div>
         </div>
 
-        <div>
-          {click && content}
+        <div className={`md:hidden block absolute top-12 left-0 right-0 bg-slate-900 transition-all duration-500 ease-in-out overflow-hidden ${click ? 'max-h-[450px] opacity-100' : 'max-h-0 opacity-0'}`}>
+          <ul className='text-center text-xl p-20'>
+            <Link spy={true} smooth={true} to="About">
+              <li className='mb-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded'>About</li>
+            </Link>
+            <Link spy={true} smooth={true} to="Skills">
+              <li className='my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded'>Skills</li>
+            </Link>
+            <Link spy={true} smooth={true} to="Projects">
+              <li className='my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded'>Projects</li>
+            </Link>
+            <Link spy={true} smooth={true} to="Minigames">
+              <li className='my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded'>Minigames</li>
+            </Link>
+          </ul>
         </div>
 
         <button className='block md:hidden transition' onClick={handleClick}>
-          {click ? <FaTimes className='w-8 h-8'/> : <CiMenuFries className='w-8 h-8' />}
+          {click ? <FaTimes className='w-8 h-8' /> : <CiMenuFries className='w-8 h-8' />}
         </button>
-
       </div>
     </nav>
   )
