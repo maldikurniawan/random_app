@@ -11,7 +11,7 @@ const About = () => {
     <div id='About' className='lg:px-56 px-10 lg:py-0 py-20 text-center gap-5 lg:text-start flex lg:flex-row flex-col justify-between lg:gap-28 items-center'>
       <img
         data-aos="fade-down"
-        src="./assets/picture.jpeg"
+        src="./assets/profile.jpg"
         width={200}
         height={200}
         className='rounded border-2 p-1 mt-6 border-fuchsia-500 img_glow'

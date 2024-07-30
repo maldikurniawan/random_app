@@ -21,6 +21,9 @@ const Nav = () => {
               <Link spy={true} smooth={true} to="About">
                 <li className='hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer'>About</li>
               </Link>
+              <Link spy={true} smooth={true} to="Educations">
+                <li className='hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer'>Educations</li>
+              </Link>
               <Link spy={true} smooth={true} to="Skills">
                 <li className='hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer'>Skills</li>
               </Link>
@@ -38,6 +41,9 @@ const Nav = () => {
           <ul className='text-center text-xl p-20'>
             <Link spy={true} smooth={true} to="About">
               <li className='mb-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded'>About</li>
+            </Link>
+            <Link spy={true} smooth={true} to="Educations">
+              <li className='my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded'>Educations</li>
             </Link>
             <Link spy={true} smooth={true} to="Skills">
               <li className='my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded'>Skills</li>
