@@ -53,7 +53,7 @@ const Projects = () => {
             src="./assets/cache.jpg"
             alt="" />
           <div className="absolute inset-0 flex items-center justify-center rounded-3xl text-center bg-black bg-opacity-80 font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            Sistem Monitoring<br />Cache Server
+            Sistem Monitoring<br />Cache Proxy
           </div>
         </div>
       </div>

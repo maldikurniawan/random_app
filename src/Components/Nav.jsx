@@ -37,7 +37,7 @@ const Nav = () => {
           </div>
         </div>
 
-        <div className={`md:hidden block absolute top-12 left-0 right-0 bg-slate-900 transition-all duration-500 ease-in-out overflow-hidden ${click ? 'max-h-[450px] opacity-100' : 'max-h-0 opacity-0'}`}>
+        <div className={`md:hidden block absolute top-12 left-0 right-0 bg-slate-900 transition-all duration-500 ease-in-out overflow-hidden ${click ? 'max-h-[540px] opacity-100' : 'max-h-0 opacity-0'}`}>
           <ul className='text-center text-xl p-20'>
             <Link spy={true} smooth={true} to="About">
               <li className='mb-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded'>About</li>
