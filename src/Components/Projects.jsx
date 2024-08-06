@@ -26,11 +26,11 @@ const Projects = () => {
             height={250}
             width={250}
             className='text-[26px] flex items-center justify-center rounded-3xl p-1 border-2 border-fuchsia-800 b_glow'
-            src="./assets/sipelan.jpg"
+            src="./assets/quranapp.jpg"
             alt="" />
-          <div className="absolute inset-0 flex items-center justify-center rounded-3xl text-center bg-black bg-opacity-80 font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            Sistem Pengelola Aktivitas Perkuliahan
-          </div>
+          <a href='https://maldikurniawan.github.io/quranapp/' target='_blank' className="absolute inset-0 flex items-center justify-center rounded-3xl text-center bg-black bg-opacity-80 font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            Quran App
+          </a>
         </div>
         <div className='relative group'>
           <img
