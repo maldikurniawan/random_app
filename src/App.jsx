@@ -36,6 +36,7 @@ function App() {
           </div>
           :
           <div className="bg-slate-800">
+            <div id="stars"></div>
             <Nav />
             <About />
             <Educations />
