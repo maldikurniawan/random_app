@@ -1,68 +1,110 @@
-import React, { useState } from 'react'
-import { Link } from 'react-scroll'
-import { FaTimes } from 'react-icons/fa'
-import { CiMenuFries } from 'react-icons/ci'
+import { useOnClickOutside } from "@/hooks/useOnClickOutside";
+import { useWindowSize } from "@/hooks/useWindowSize";
+import { useEffect, useRef, useState } from "react";
+import { FaBars } from "react-icons/fa";
+import { FaXmark } from "react-icons/fa6";
+import { Link as ScrollLink } from "react-scroll";
 
 const Nav = () => {
-  const [click, setClick] = useState(false);
-  const handleClick = () => {
-    setClick(!click);
-  }
+  const ref = useRef();
+  const { width } = useWindowSize();
+  const [navOpen, setNavOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  const menu = [
+    { title: "About", link: "About" },
+    { title: "Educations", link: "Educations" },
+    { title: "Skills", link: "Skills" },
+    { title: "Projects", link: "Projects" },
+    { title: "Minigames", link: "Minigames" },
+  ];
+
+  useOnClickOutside(ref, () => setNavOpen(false));
+
+  useEffect(() => {
+    if (width > 1024) {
+      setNavOpen(false);
+    }
+  }, [width]);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScrolled(window.scrollY >= 100);
+    });
+  }, []);
 
   return (
-    <nav>
-      <div className='h-10vh flex justify-between w-full z-50 text-white lg:py-5 px-5 md:px-16 py-4 fixed bg-slate-900'>
-        <div className='flex items-center flex-1'>
-          <span className='text-3xl font-bold'>PORTOFOLIO</span>
-        </div>
-        <div className='lg:flex md:flex lg:flex-1 items-center justify-end font-normal hidden'>
-          <div className='flex-10'>
-            <ul className='flex gap-8 text-[18px]'>
-              <Link spy={true} smooth={true} to="About">
-                <li className='hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer'>About</li>
-              </Link>
-              <Link spy={true} smooth={true} to="Educations">
-                <li className='hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer'>Educations</li>
-              </Link>
-              <Link spy={true} smooth={true} to="Skills">
-                <li className='hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer'>Skills</li>
-              </Link>
-              <Link spy={true} smooth={true} to="Projects">
-                <li className='hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer'>Projects</li>
-              </Link>
-              <Link spy={true} smooth={true} to="Minigames">
-                <li className='hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer'>Minigames</li>
-              </Link>
-            </ul>
-          </div>
+    <>
+      <header
+        className={`px-4 md:px-[80px] h-20 flex items-center justify-between w-full fixed top-0 z-40 transition-all duration-300 py-0 ${scrolled
+          ? "shadow bg-slate-900 bg-opacity-90 hover:bg-opacity-100"
+          : "shadow-none bg-slate-900"
+          }`}
+      >
+        <div className="font-bold text-xl flex md:text-3xl items-center gap-4 justify-center text-fuchsia-100">
+          <ScrollLink
+            to="About"
+            smooth={true}
+            duration={500}
+            className="cursor-pointer"
+          >
+            PORTFOLIO
+          </ScrollLink>
         </div>
 
-        <div className={`md:hidden block absolute top-12 left-0 right-0 bg-slate-900 transition-all duration-500 ease-in-out overflow-hidden ${click ? 'max-h-[540px] opacity-100' : 'max-h-0 opacity-0'}`}>
-          <ul className='text-center text-xl p-20'>
-            <Link spy={true} smooth={true} to="About">
-              <li className='mb-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded'>About</li>
-            </Link>
-            <Link spy={true} smooth={true} to="Educations">
-              <li className='my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded'>Educations</li>
-            </Link>
-            <Link spy={true} smooth={true} to="Skills">
-              <li className='my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded'>Skills</li>
-            </Link>
-            <Link spy={true} smooth={true} to="Projects">
-              <li className='my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded'>Projects</li>
-            </Link>
-            <Link spy={true} smooth={true} to="Minigames">
-              <li className='my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded'>Minigames</li>
-            </Link>
-          </ul>
+        <div className="hidden xl:flex items-center gap-x-2">
+          {menu.map((item, itemIdx) => (
+            <div key={itemIdx}>
+              <ScrollLink
+                to={item.link}
+                smooth={true}
+                duration={500}
+                className="text-fuchsia-100 rounded-md px-2 py-[8px] hover:bg-fuchsia-100 hover:text-fuchsia-600 font-medium whitespace-nowrap cursor-pointer"
+              >
+                {item.title}
+              </ScrollLink>
+            </div>
+          ))}
         </div>
 
-        <button className='block md:hidden transition' onClick={handleClick}>
-          {click ? <FaTimes className='w-8 h-8' /> : <CiMenuFries className='w-8 h-8' />}
+        <button
+          onClick={() => setNavOpen(true)}
+          className="block xl:hidden text-fuchsia-100 p-5 cursor-pointer"
+        >
+          <FaBars size={22} />
         </button>
-      </div>
-    </nav>
-  )
-}
+      </header>
 
-export default Nav
+      {/* Mobile Navigation */}
+      <div
+        ref={ref}
+        style={{ right: navOpen ? "0" : "-300px" }}
+        className="fixed z-50 top-0 h-full min-[300px]:w-[300px] bg-[#0F172A]/50 backdrop-blur drop-shadow transition-all"
+      >
+        <div className="flex items-center justify-end text-fuchsia-100 p-4">
+          <FaXmark
+            className="cursor-pointer"
+            onClick={() => setNavOpen(false)}
+          />
+        </div>
+        <div className="p-4 h-96 text-left space-y-8">
+          {menu.map((item, itemIdx) => (
+            <div key={itemIdx}>
+              <ScrollLink
+                to={item.link}
+                smooth={true}
+                duration={500}
+                className="px-6 py-2 text-fuchsia-100 hover:bg-white/20 font-medium whitespace-nowrap cursor-pointer rounded-lg"
+                onClick={() => setNavOpen(false)} // Close menu after click
+              >
+                {item.title}
+              </ScrollLink>
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Nav;

@@ -16,7 +16,7 @@ const Projects = () => {
             src="./assets/erpskrip.jpg"
             alt=""
           />
-          <a href='https://erpskrip.id/' target='_blank' className="absolute inset-0 flex items-center justify-center rounded-3xl text-center bg-black bg-opacity-80 font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <a href='https://erpskrip.id/' target='_blank' className="absolute inset-0 flex items-center justify-center rounded-3xl text-center bg-black bg-opacity-80 font-bold text-fuchsia-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             ERPSKRIP
           </a>
         </div>
@@ -28,7 +28,7 @@ const Projects = () => {
             className='text-[26px] flex items-center justify-center rounded-3xl p-1 border-2 border-fuchsia-800 b_glow'
             src="./assets/quranapp.jpg"
             alt="" />
-          <a href='https://maldikurniawan.github.io/quranapp/' target='_blank' className="absolute inset-0 flex items-center justify-center rounded-3xl text-center bg-black bg-opacity-80 font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <a href='https://maldikurniawan.github.io/quranapp/' target='_blank' className="absolute inset-0 flex items-center justify-center rounded-3xl text-center bg-black bg-opacity-80 font-bold text-fuchsia-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             Quran App
           </a>
         </div>
@@ -40,7 +40,7 @@ const Projects = () => {
             className='text-[26px] flex items-center justify-center rounded-3xl p-1 border-2 border-fuchsia-800 b_glow'
             src="./assets/bukuilmiah.jpg"
             alt="" />
-          <div className="absolute inset-0 flex items-center justify-center rounded-3xl text-center bg-black bg-opacity-80 font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <div className="absolute inset-0 flex items-center justify-center rounded-3xl text-center bg-black bg-opacity-80 font-bold text-fuchsia-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             Buku Ilmiah
           </div>
         </div>
@@ -52,7 +52,7 @@ const Projects = () => {
             className='text-[26px] flex items-center justify-center rounded-3xl p-1 border-2 border-fuchsia-800 b_glow'
             src="./assets/cache.jpg"
             alt="" />
-          <div className="absolute inset-0 flex items-center justify-center rounded-3xl text-center bg-black bg-opacity-80 font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <div className="absolute inset-0 flex items-center justify-center rounded-3xl text-center bg-black bg-opacity-80 font-bold text-fuchsia-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             Sistem Monitoring<br />Cache Proxy
           </div>
         </div>

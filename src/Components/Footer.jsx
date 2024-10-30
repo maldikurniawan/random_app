@@ -3,9 +3,9 @@ import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 
 const Footer = () => {
   return (
-    <footer className='bg-slate-800 text-white lg:px-20 px-4 py-2'>
+    <footer className='bg-slate-900 text-fuchsia-100 lg:px-20 px-4 py-2'>
       <div className="py-2 text-xs md:text-sm justify-between w-full font-semibold flex">
-        <div className="mb-2">
+        <div className='my-auto'>
           Designed by Aldi
         </div>
         <div className="flex gap-4">

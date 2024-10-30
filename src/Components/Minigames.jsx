@@ -16,7 +16,7 @@ const Minigames = () => {
                         src="./assets/magicmemmory.jpg"
                         alt=""
                     />
-                    <a href='https://maldikurniawan.github.io/magic-memory/' target='_blank' className="absolute inset-0 flex items-center justify-center rounded-3xl text-center bg-black bg-opacity-80 font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <a href='https://maldikurniawan.github.io/magic-memory/' target='_blank' className="absolute inset-0 flex items-center justify-center rounded-3xl text-center bg-black bg-opacity-80 font-bold text-fuchsia-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         Magic Memmory
                     </a>
                 </div>
@@ -28,7 +28,7 @@ const Minigames = () => {
                         className='text-[26px] flex items-center justify-center rounded-3xl p-1 border-2 border-fuchsia-800 b_glow'
                         src="./assets/2048.jpg"
                         alt="" />
-                    <a href='https://maldikurniawan.github.io/2048-animated/' target='_blank' className="absolute inset-0 flex items-center justify-center rounded-3xl text-center bg-black bg-opacity-80 font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <a href='https://maldikurniawan.github.io/2048-animated/' target='_blank' className="absolute inset-0 flex items-center justify-center rounded-3xl text-center bg-black bg-opacity-80 font-bold text-fuchsia-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         2048
                     </a>
                 </div>
@@ -40,7 +40,7 @@ const Minigames = () => {
                         className='text-[26px] flex items-center justify-center rounded-3xl p-1 border-2 border-fuchsia-800 b_glow'
                         src="./assets/tetris.jpg"
                         alt="" />
-                    <a href='https://maldikurniawan.github.io/react-tetris/' target='_blank' className="absolute inset-0 flex items-center justify-center rounded-3xl text-center bg-black bg-opacity-80 font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <a href='https://maldikurniawan.github.io/react-tetris/' target='_blank' className="absolute inset-0 flex items-center justify-center rounded-3xl text-center bg-black bg-opacity-80 font-bold text-fuchsia-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         Tetris
                     </a>
                 </div>
@@ -52,7 +52,7 @@ const Minigames = () => {
                         className='text-[26px] flex items-center justify-center rounded-3xl p-1 border-2 border-fuchsia-800 b_glow'
                         src="./assets/shooting.jpg"
                         alt="" />
-                    <a href='https://maldikurniawan.github.io/r3f-playroom-multiplayer-shooter-game/' target='_blank' className="absolute inset-0 flex items-center justify-center rounded-3xl text-center bg-black bg-opacity-80 font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <a href='https://maldikurniawan.github.io/r3f-playroom-multiplayer-shooter-game/' target='_blank' className="absolute inset-0 flex items-center justify-center rounded-3xl text-center bg-black bg-opacity-80 font-bold text-fuchsia-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         Shooting Game
                     </a>
                 </div>
