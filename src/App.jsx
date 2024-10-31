@@ -44,6 +44,7 @@ function App() {
             <Projects />
             <Minigames />
             <Footer />
+            <div id="stars2"></div>
           </div>
       }
     </>

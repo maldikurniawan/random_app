@@ -41,7 +41,7 @@ const Projects = () => {
             src="./assets/bukuilmiah.jpg"
             alt="" />
           <div className="absolute inset-0 flex items-center justify-center rounded-3xl text-center bg-black bg-opacity-80 font-bold text-fuchsia-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            Buku Ilmiah
+            Sistem Buku Ilmiah
           </div>
         </div>
         <div className='relative group'>
